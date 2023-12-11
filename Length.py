@@ -102,7 +102,7 @@ d_rail = RMS_func(m_BOI['Track width (cm)']*10) # Adding the error of the calipe
 # d_rail[1] = d_rail[1] + 0.02 # mm
 
 def Err_prop_pos(val1, val2):
-    val = val1[0] - val2[0]
+    val = val1[0] + val2[0]
     
     sigma = np.sqrt((val2[1])**2 + (val2[1])**2)
     return np.array([val, sigma])
@@ -198,11 +198,11 @@ values_BOI['pos3'] = g_pos[2]
 values_BOI['pos4'] = g_pos[3]
 values_BOI['pos5'] = g_pos[4]
 
-m_BOI.to_pickle('./Data/measurements_ball_on_incline')
-values_BOI.to_pickle('./Data/values_BOI')
+m_BOI.to_pickle('./Data/measurements_ball_on_incline.pkl')
+values_BOI.to_pickle('./Data/values_BOI.pkl')
 
-m_P.to_pickle('./Data/measurements_pendulum')
-values_P.to_pickle('./Data/values_P')
+m_P.to_pickle('./Data/measurements_pendulum.pkl')
+values_P.to_pickle('./Data/values_P.pkl')
 
 
 
