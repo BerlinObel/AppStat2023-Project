@@ -1,0 +1,13 @@
+,,,,,,,
+,,Pendulum,,,,,
+,,Andras,Ellen,Pernille,Ras,Oscar,Laser
+,Length from top to pendulum (cm),179.9,180.1,180.1,179.7,179.9,180
+,Length from top to pendulum uncertainty (mm),3,2,2,1,0.5,0.1
+,Height of pendulum (cm),2.50,2.5,2.5,2.50,2.50,
+,Height of pendulum uncertainty (mm),0.5,0.2,0.5,0.1,0.2,
+,Length from pendulum to floor (cm),23.8,23.6,23.7,23.7,23.8,
+,Length from pendulum to floor uncertainty (mm),2,1,1.5,0.5,1,
+,End length from floor to pendulum (cm),23.8,23.65,23.75,23.75,23.75,23.6
+,End length from floor to pendulum uncertainty (mm),0.5,1,0.5,0.5,1,0.1
+Uden usikkerheder,Længde fra krog til center of mass (START),181.15,181.35,181.35,180.95,181.15,
+Uden usikkerheder,Ændring i længde,0.00,0.05,0.05,0.05,-0.05,206.1
