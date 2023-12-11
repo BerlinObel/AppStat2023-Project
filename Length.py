@@ -83,8 +83,8 @@ l_PendulumToFloor_END = RMS_func(m_P['End length from floor to pendulum (cm)'],
 l_PendulumToFloor_CHANGE = np.array([l_PendulumToFloor_START[0] - l_PendulumToFloor_END[0], 
                                     np.sqrt(l_PendulumToFloor_START[1]**2 + l_PendulumToFloor_END[1]**2)])
 
-l_PendulumToHook_END = np.array([l_PendulumToHook_START[0] + l_PendulumToHook_CHANGE[0], 
-                                 np.sqrt(l_PendulumToHook_START[1]**2 + l_PendulumToHook_CHANGE[1]**2)])
+l_PendulumToHook_END = np.array([l_PendulumToHook_START[0] + l_PendulumToFloor_CHANGE[0], 
+                                 np.sqrt(l_PendulumToHook_START[1]**2 + l_PendulumToFloor_CHANGE[1]**2)])
 l_COM_END = np.array( [l_PendulumToHook_END[0]+1/2*w_Pendulum[0],
                          np.sqrt(l_PendulumToHook_END[1]**2 + 1/2*w_Pendulum[1]**2)] )
 
